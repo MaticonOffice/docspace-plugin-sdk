@@ -1,0 +1,45 @@
+﻿{
+  "name": "@maticonoffice/docspace-plugin-sdk",
+  "version": "2.0.0",
+  "minDocSpaceVersion": "3.5.0",
+  "description": "Simple plugin system for maticonoffice docspace",
+  "license": "Apache-2.0",
+  "homepage": "https://www.maticonoffice.ru",
+  "author": "Maticon Office LLC <integration@maticonoffice.ru> (https://www.maticonoffice.ru)",
+  "maintainers": [
+    "Maticon Office LLC <integration@maticonoffice.ru> (https://www.maticonoffice.ru)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaticonOffice/docspace-plugin-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaticonOffice/docspace-plugin-sdk",
+    "email": "support@maticonoffice.ru"
+  },
+  "keywords": [
+    "maticonoffice",
+    "docspace",
+    "plugin"
+  ],
+  "bin": {
+    "build-docspace-plugin": "./npx/buildPlugin.js",
+    "create-docspace-plugin": "./npx/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "typedoc": "^0.27.5",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "inquirer": "^9.1.0",
+    "jszip": "^3.10.1"
+  }
+}
